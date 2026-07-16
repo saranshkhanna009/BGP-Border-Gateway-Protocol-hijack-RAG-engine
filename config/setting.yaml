@@ -1,0 +1,14 @@
+
+
+stream_ingestion:
+  ripe_ris_live_url: "wss://ris-live.ripe.net/v1/ws/"
+  max_buffer_size: 5000
+  timeout_seconds: 30
+
+rag_preprocessing:
+  chunk_size_tokens: 512
+  chunk_overlap_tokens: 64
+  clean_whitespace: true
+  supported_extensions:
+    - ".txt"
+    - ".md"
